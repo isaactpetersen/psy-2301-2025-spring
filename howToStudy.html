@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Learning and Succeeding in Introduction to Clinical Psychology</title>
+
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script src="site_libs/navigation-1.1/sourceembed.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BM7X404RV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0BM7X404RV');
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+<style type="text/css">
+#rmd-source-code {
+  display: none;
+}
+</style>
+
+
+<link rel="stylesheet" href="includes/custom.css" type="text/css" />
+<link rel="stylesheet" href="font/css/roboto.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Class Wiki for Introduction to Clinical Psychology (Spring 2023)</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="syllabus.html">Course Syllabus</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Miscellaneous
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="howToStudy.html">How to Study for Intro Clinical</a>
+    </li>
+    <li>
+      <a href="help.html">I Think I Might Need Some Help...</a>
+    </li>
+    <li>
+      <a href="mediationInteraction.html">Mediation vs. Interaction</a>
+    </li>
+    <li>
+      <a href="quizlet.html">Using Quizlet to Learn Key Terms</a>
+    </li>
+    <li>
+      <a href="devpsylab.html">Opportunity to Join My Research Lab!</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+<li role="separator" class="divider"></li>
+<li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Learning and Succeeding in Introduction to
+Clinical Psychology</h1>
+<h3 class="subtitle">Adapted from a document by Teresa Treat and
+Caroline Boyd-Rogers</h3>
+
+</div>
+
+
+<p>In this course, our goal is for you to learn about and understand the
+science of clinical psychology, its application to the real world, and
+the limitations and strengths of the clinically relevant research and
+claims you encounter. We have created this document to describe
+evidence-based strategies for learning and applying the course material,
+as well as preparing for exams.</p>
+<div id="attend-and-participate-in-every-class-session"
+class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Attend and Participate
+in Every Class Session</h1>
+<ul>
+<li><u>Attend every lecture and class discussion section.</u> Attendance
+is important for learning the material. Get notes if you miss a
+class.</li>
+<li><u>Take good notes</u> in every lecture and discussion section, and
+while doing the readings. We purposefully leave blanks in our Powerpoint
+slides that necessitate notetaking. Taking notes will facilitate active
+learning AND be useful when preparing for exams. Don’t try to copy down
+verbatim what the instructor or TA is saying. Rather, think about the
+new concepts they are introducing and find ways to summarize the new
+information in ways that will make sense to you later along the way.
+Review your notes carefully, and let your TA or Professor Petersen know
+if you have any questions or points of confusions!</li>
+<li><u>Participate fully in active-learning opportunities in lectures
+and discussion sections</u>. We will try to provide opportunities in
+every class session to discuss ideas with your neighbors, to write about
+your perspectives, and to answer questions or solve problems on the
+Powerpoint slides.</li>
+<li><u>Ask questions</u> in class (we’ll address as many as we can!).
+And ask questions outside of class. You can do this right after class or
+discussion section. You can come to office hours with any of the TAs or
+with Professor Petersen. You can email questions to any of the TAs or
+Professor Petersen. You can also ask other students in the class or in
+your study group about your questions. We know that it can be
+anxiety-provoking to talk with your TAs or course instructors, but we
+all love talking with students, and we’re really good at figuring out
+what is confusing you and then helping you to understand it better!</li>
+</ul>
+</div>
+<div id="do-all-of-the-required-readings-and-assignments"
+class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Do All of the Required
+Readings and Assignments</h1>
+<p>Completion of the required readings and assignments is an important
+prerequisite for learning the material.</p>
+</div>
+<div id="pay-particular-attention-to-what-is-most-important"
+class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Pay Particular
+Attention to What is Most Important</h1>
+<p>There is too much content in the class to remember everything, so it
+is important to prioritize studying the most important information.</p>
+<p><u>Pay close attention to things that are emphasized, including
+things that are talked about more than once.</u> Certain concepts will
+be emphasized much more than others. If we discuss something several
+times or with greater emphasis, it is because it is a critical concept
+and we want to make sure you understand it. Listen for themes that come
+up in both lecture and discussions sections. Make sure you understand
+what is important about them!</p>
+<p><u>Pay particular to the take-away messages of each lecture,
+discussion section, and reading.</u> When you read an article or review
+a lecture, ask yourself: “What are the main messages Professor Petersen
+wants us to hear?” After attending lecture and the discussion sections,
+close your notes and ask yourself, “What were the main points that
+Professor Petersen or the TA emphasized and what was important about
+them?” Similarly, after reading the assignment for discussion sections
+or lecture, turn the material face down and ask yourself, “What was
+important about this reading? What about this is relevant to lecture and
+section? What are the main things to learn?” If you read a research
+article, ask yourself “What are the main findings? What are the
+strengths and limitations of the study?” <strong>Have the reading quiz
+open while reading the article</strong>, to help guide your reading so
+you make sure you take away the key points of the reading.</p>
+<p><u>Pay attention to the examples Professor Petersen and the TAs use
+in lecture and section.</u> Examples will help place the different
+concepts into context. Think about the different examples given in class
+and use them to learn how each concept can be applied. This should give
+you a better understanding of what might otherwise be an abstract
+concept.</p>
+<p><u>Focus on understanding the concepts</u>, not just memorizing the
+details. Students are often taught to memorize facts to be successful in
+class. Although memorizing some facts will be helpful in this class, we
+really want you to understand how the facts are <em>applied</em> in
+clinical psychology. Thus, many test questions will require that you
+both know the facts and understand more abstract concepts. To succeed in
+this class, it is important that you think deeply about and learn to
+apply the knowledge from lecture and section, rather than simply
+memorizing it. You will do best on exams if you go beyond memorizing and
+critically think about the ideas we present in lecture and discussion
+sections. In addition to understanding the concepts and technical terms
+we have discussed, you should understand why they are important and how
+to apply them. Compare concepts discussed in class and think about how
+they are similar or different. Apply concepts to real world scenarios
+and think through the examples presented in class. Put the concepts into
+your own words and try to teach them to someone else. This helps you
+figure out what you do and don’t understand, which puts you in a better
+position to ask specific questions after class or in office hours.</p>
+<p>Regarding the types of questions you may be asked on the exam, you do
+<em>not</em> need to memorize dates, names, or exact numbers, unless the
+date/name/number was stressed in class or section, but you will be
+expected to know general trends that we emphasized.</p>
+</div>
+<div id="use-effective-study-strategies" class="section level1"
+number="4">
+<h1><span class="header-section-number">4</span> Use Effective Study
+Strategies</h1>
+<div id="schedule-study-time" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Schedule Study
+Time</h2>
+<p><u>Do not leave things for last minute.</u> You will have a lot to
+study before you know it. Try to keep up with the material and ask
+questions if you have them.</p>
+<p><u>Study for shorter but more frequent periods.</u> One of the
+<strong>BEST</strong> things you can do to learn the course material is
+<u><strong>study for a shorter amount of time, on multiple days a week,
+and for every week of the semester</strong></u>. Research clearly
+indicates that this is a much more effective approach than cramming your
+studying into two or three longer study sessions right before the exam.
+In a nutshell, the research on studying tells us that humans best
+remember information when they practice recalling that information
+across numerous study sessions.</p>
+<p>For instance, if you budget one hour to learn all the different types
+of reliability and validity, you will be more likely to remember them on
+test day if you study them for 15 minutes across four days rather than
+studying them for a single hour at one time. Thus, even though you’re
+not studying the information for any longer, spreading out the times
+that you study (i.e., revisiting the material again and again for
+briefer study sessions) is the best approach to successfully remembering
+the information on test day and beyond the course itself.</p>
+<p>We recommend studying the course material for 4–5 hours per week
+across three 90-minute study sessions or across four-to-five 60-minute
+study sessions. We suggest scheduling these study sessions in your
+calendar to occur every week just like you would your classes. Here is
+an example of what your study session schedule might look like:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Monday</th>
+<th align="left">Tuesday</th>
+<th align="left">Wednesday</th>
+<th align="left">Thursday</th>
+<th align="left">Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">8:00–9:30</td>
+<td align="left"></td>
+<td align="left">11:30–1:00</td>
+<td align="left">5:30–7:00</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p>Now that you have scheduled regular study sessions, what is the most
+effective way to design your study strategy within each session?
+Research indicates that <u>the most effective study strategy spreads out
+testing yourself on different parts of the material
+<strong>within</strong> study sessions as well as
+<strong>between</strong> study sessions</u>. For instance, if you want
+to remember the inclusion and exclusion criteria for mental disorders,
+you might test yourself on what you remember, check your answers, and
+then move on to study something else. Then, at the end of the same study
+session, you could test yourself again on inclusion and exclusion
+criteria and check your answers. You could also decide to test yourself
+on these criteria at the start of each study session for a week, until
+remembering the information becomes easy and you can recall it
+automatically. This helps your brain practice successful remembering. If
+something is difficult to remember, try struggling with it before you
+show yourself the answer. Memory works sort of like a muscle, so
+challenging your brain to remember something difficult can help you
+remember more successfully the next time.</p>
+<p>Below, <u>we’ve included an example week of how individual study
+sessions might be structured using the spaced-out approach</u> during a
+week early in the semester, when you have had the first three lectures
+and have already spent some time studying the first two lectures. Keep
+in mind that the third lecture has more material than the first two
+lectures and is the most recently learned (so the least studied). Thus,
+it is allotted the most time. Imagine spending 15–20 minutes on each
+block within a session. Customize these study sessions to spend the most
+time on course material that feels the most challenging to you and less
+time on material that you feel more confident about. <u>As you can see,
+the lectures repeat across days and within single study sessions, and
+the study approaches draw from a variety of the effective study
+techniques we described in more detail in discussion section (and
+below!)</u>.</p>
+<div class="figure">
+<img src="images/studySchedule.jpg" alt="" />
+<p class="caption">Example Study Schedule</p>
+</div>
+</div>
+<div id="testYourself" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Test Yourself</h2>
+<p>One of the <strong>BEST</strong> ways to learn the course material
+and do well on the exams is to <u><strong>test yourself</strong></u> on
+key concepts, their distinctions, and their implications/applications,
+rather than just re-reading or re-writing your notes over and over
+again. There are <u>three testing methods</u> that we highly recommend
+this semester.</p>
+<p>First, <u><a href="quizlet.html">use Quizlet</a></u> to test your
+ability to provide definitions for key concepts. We have created Quizlet
+study sets for each lecture; for instructions how to access them, see <a
+href="quizlet.html">here</a>. Note that you can use Quizlet as a
+strategy for organizing your self-learning, too. We recommend that you
+use the “Flashcards”, “Test”, and “Match” study methods. “Match”
+evaluates your ability to recognize or identify the correct definition
+for each term. This is the easiest approach and is a good starting
+place. “Test” also evaluates your ability to recognize or identify the
+correct definition for a term but uses a variety of testing strategies.
+This study method is more challenging than “Match”. “Flashcards”
+evaluates your ability to recall the correct definition for each term.
+This study method is the most challenging.</p>
+<p>Second, <u>complete all study questions for each lecture and all
+practice exam questions for each exam</u>, which you can find in the
+“Study Questions” and “Practice Exam Questions” folders, respectively,
+of the “Files” tab in ICON. The study questions and practice exam
+questions are a great tool that will help you check for understanding of
+concepts. There are multiple-choice questions, for which all correct
+answers are provided. And there are open-ended questions, for which
+sample correct responses are provided. The latter type of question is
+particularly challenging, because research clearly demonstrates that
+trying to put class-related material into your own words is one of the
+best ways to learn new material and figure out what is confusing to
+you.</p>
+<p>Third, <u>ask yourself questions</u> about the material you have
+studied, answer them, and THEN check to see if you are correct. For
+example, after reviewing the first lecture, you might close your
+materials, then ask yourself “What are the four main measurement
+strategies in scientific clinical psychology, and how are they defined?”
+or “What are some key characteristics of scientific clinical
+psychology?” or “What are some key challenges facing scientific clinical
+psychology?”</p>
+<p>In a prior semester of the class, the students who received the
+highest grades tended to spend relatively more time using Study
+Questions to test themselves compared to using Quizlet or rereading
+their notes (see figure below).</p>
+<div class="figure">
+<img src="images/examGradesByStudyMethod.png" alt="" />
+<p class="caption">Grades by Study Method in Prior Semester</p>
+</div>
+</div>
+<div id="put-material-into-your-own-words" class="section level2"
+number="4.3">
+<h2><span class="header-section-number">4.3</span> Put Material Into
+Your Own Words</h2>
+<p>Another one of the <strong>BEST</strong> ways to learn the course
+material and do well on the exams is to <u><strong>put the course
+material into your own words</strong></u> or <u><strong>try to explain
+the material to someone/something else (including your ceiling
+fan)</strong></u>.</p>
+<p>Close your notes on a particular portion of the material and then ask
+yourself some of the following questions or explain them to
+someone/something else: “What are the main points, concepts, and
+findings, in my own words? What is important about key points, concepts
+and findings, in my own words? What might another example of a key
+concept be? How can key concepts be applied? How do key concepts differ
+from one another, in my own words?”</p>
+<p>Similarly, after reading a research article for discussion section,
+turn the material face down and ask yourself some of the following
+questions: “What is important about this reading, in my own words? What
+about this paper is relevant to our course? What are the main findings?
+What are the strengths and limitations of the study??</p>
+<p>These approaches—which move beyond memorizing concepts—will help you
+more deeply understand and learn to apply course material, which is
+critical to success in this course. These approaches also help you
+figure out what’s confusing you, so you’re in a better position to ask
+questions during/after class, over email, or in office hours.</p>
+</div>
+<div id="study-with-peers" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Study With Peers</h2>
+<p>Join a peer study group! Students can learn a lot from studying with
+their peers. Studying with peers can help students gain better
+understanding of where their knowledge of course material is stronger
+and which topics they need to study more. Moreover, providing
+instruction to other peers can help consolidate your own learning.
+Contact the instructor team if you want to join a peer study group.</p>
+</div>
+</div>
+<div id="go-easy-on-less-effective-study-strategies"
+class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Go Easy on Less
+Effective Study Strategies</h1>
+<p>Finally, we’re going to touch briefly on <u><strong>what doesn’t work
+well</strong></u> when trying to learn course material and prepare for
+exams. Research tells us that re-reading or re-writing notes over and
+over again doesn’t improve your understanding of course material and
+test performance, even though it may feel like the material is becoming
+easier or more familiar. As we noted above, cramming most of your
+studying into the day or two before the exam also results in less
+understanding and poorer test scores. Active learning and testing
+methods are key to improving understanding and doing better on exams,
+even if they feel more challenging. Thus, we urge you to test yourself
+using Quizlet, complete the Study Questions, ask yourself questions, and
+try to put course material into your own words!</p>
+</div>
+<div id="use-effective-test-taking-strategies" class="section level1"
+number="6">
+<h1><span class="header-section-number">6</span> Use Effective
+Test-Taking Strategies</h1>
+<ul>
+<li>Arrive early and relax in the minutes before the exam. You might
+focus on your breathing, close your eyes and focus on vividly recalling
+a relaxing scene or experience, or slowly clench and release some muscle
+groups in your body.</li>
+<li>Make an initial rapid pass through the exam in which you answer
+every question you can. Don’t spend too long on any single question—just
+flag the ones about which you are uncertain and move on. But do read the
+instructions, the questions, and the responses carefully, so you don’t
+make careless errors.</li>
+<li>On your second pass through the exam, take a little longer (but not
+too long!) on each of the remaining questions and make your best call on
+each one.</li>
+<li>Leave time to review your answers if you can.</li>
+<li>Keep a good eye on your time, and manage your time well, so that you
+have sufficient time to make both the first and second pass through the
+exam.</li>
+<li>Ask questions if you have them. We’ll let you know if we can’t
+answer them.</li>
+<li>Get a good night’s sleep before the exam! This will improve your
+long-term memory for course material and make it easier to access during
+the exam.</li>
+<li>Get some exercise or engage in physical activity of some sort (even
+a brief walk!). Physical activity can improve your ability to focus on
+challenging tasks and reduce your anxiety about the exam.</li>
+<li>Evaluate your performance and the adequacy of your preparation after
+the exam (both before and after you know how you did!). What worked
+well, and what should you consider doing differently when preparing for
+and taking the next exam? Feel free to come discuss this with the TAs or
+Professor Petersen!</li>
+</ul>
+</div>
+<div id="ask-us-questions-and-let-us-know-when-youre-confused"
+class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Ask Us Questions and
+Let Us Know When You’re Confused</h1>
+<p>Every one of us—including your TAs and Profs!—have questions and get
+confused about course material sometimes. When this happens to you (and
+it will!), remember that you have a lot of options: you can ask
+questions inside or outside of class, you can come to office hours with
+us, and you can email us. We know that talking with us can be
+challenging, but we encourage you to get outside your comfort zone and
+give it a try! 😊 We all love working with students, and we all want you
+to succeed in our class. Ask for help when you need it!</p>
+</div>
+
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiTGVhcm5pbmcgYW5kIFN1Y2NlZWRpbmcgaW4gSW50cm9kdWN0aW9uIHRvIENsaW5pY2FsIFBzeWNob2xvZ3kiCnN1YnRpdGxlOiAiQWRhcHRlZCBmcm9tIGEgZG9jdW1lbnQgYnkgVGVyZXNhIFRyZWF0IGFuZCBDYXJvbGluZSBCb3lkLVJvZ2VycyIKLS0tCgpgYGB7ciBzZXR1cCwgaW5jbHVkZSA9IEZBTFNFfQprbml0cjo6b3B0c19jaHVuayRzZXQoZWNobyA9IFRSVUUsCiAgICAgICAgICAgICAgICAgICAgICBlcnJvciA9IFRSVUUsCiAgICAgICAgICAgICAgICAgICAgICBjb21tZW50ID0gIiIpCmBgYAoKYGBge3IsIGluY2x1ZGUgPSBGQUxTRX0KbGlicmFyeSgiZW1vIikKYGBgCgpJbiB0aGlzIGNvdXJzZSwgb3VyIGdvYWwgaXMgZm9yIHlvdSB0byBsZWFybiBhYm91dCBhbmQgdW5kZXJzdGFuZCB0aGUgc2NpZW5jZSBvZiBjbGluaWNhbCBwc3ljaG9sb2d5LCBpdHMgYXBwbGljYXRpb24gdG8gdGhlIHJlYWwgd29ybGQsIGFuZCB0aGUgbGltaXRhdGlvbnMgYW5kIHN0cmVuZ3RocyBvZiB0aGUgY2xpbmljYWxseSByZWxldmFudCByZXNlYXJjaCBhbmQgY2xhaW1zIHlvdSBlbmNvdW50ZXIuCldlIGhhdmUgY3JlYXRlZCB0aGlzIGRvY3VtZW50IHRvIGRlc2NyaWJlIGV2aWRlbmNlLWJhc2VkIHN0cmF0ZWdpZXMgZm9yIGxlYXJuaW5nIGFuZCBhcHBseWluZyB0aGUgY291cnNlIG1hdGVyaWFsLCBhcyB3ZWxsIGFzIHByZXBhcmluZyBmb3IgZXhhbXMuCgojIEF0dGVuZCBhbmQgUGFydGljaXBhdGUgaW4gRXZlcnkgQ2xhc3MgU2Vzc2lvbgoKLSA8dT5BdHRlbmQgZXZlcnkgbGVjdHVyZSBhbmQgY2xhc3MgZGlzY3Vzc2lvbiBzZWN0aW9uLjwvdT4KQXR0ZW5kYW5jZSBpcyBpbXBvcnRhbnQgZm9yIGxlYXJuaW5nIHRoZSBtYXRlcmlhbC4KR2V0IG5vdGVzIGlmIHlvdSBtaXNzIGEgY2xhc3MuCi0gPHU+VGFrZSBnb29kIG5vdGVzPC91PiBpbiBldmVyeSBsZWN0dXJlIGFuZCBkaXNjdXNzaW9uIHNlY3Rpb24sIGFuZCB3aGlsZSBkb2luZyB0aGUgcmVhZGluZ3MuCldlIHB1cnBvc2VmdWxseSBsZWF2ZSBibGFua3MgaW4gb3VyIFBvd2VycG9pbnQgc2xpZGVzIHRoYXQgbmVjZXNzaXRhdGUgbm90ZXRha2luZy4KVGFraW5nIG5vdGVzIHdpbGwgZmFjaWxpdGF0ZSBhY3RpdmUgbGVhcm5pbmcgQU5EIGJlIHVzZWZ1bCB3aGVuIHByZXBhcmluZyBmb3IgZXhhbXMuCkRvbid0IHRyeSB0byBjb3B5IGRvd24gdmVyYmF0aW0gd2hhdCB0aGUgaW5zdHJ1Y3RvciBvciBUQSBpcyBzYXlpbmcuClJhdGhlciwgdGhpbmsgYWJvdXQgdGhlIG5ldyBjb25jZXB0cyB0aGV5IGFyZSBpbnRyb2R1Y2luZyBhbmQgZmluZCB3YXlzIHRvIHN1bW1hcml6ZSB0aGUgbmV3IGluZm9ybWF0aW9uIGluIHdheXMgdGhhdCB3aWxsIG1ha2Ugc2Vuc2UgdG8geW91IGxhdGVyIGFsb25nIHRoZSB3YXkuClJldmlldyB5b3VyIG5vdGVzIGNhcmVmdWxseSwgYW5kIGxldCB5b3VyIFRBIG9yIFByb2Zlc3NvciBQZXRlcnNlbiBrbm93IGlmIHlvdSBoYXZlIGFueSBxdWVzdGlvbnMgb3IgcG9pbnRzIG9mIGNvbmZ1c2lvbnMhCi0gPHU+UGFydGljaXBhdGUgZnVsbHkgaW4gYWN0aXZlLWxlYXJuaW5nIG9wcG9ydHVuaXRpZXMgaW4gbGVjdHVyZXMgYW5kIGRpc2N1c3Npb24gc2VjdGlvbnM8L3U+LgpXZSB3aWxsIHRyeSB0byBwcm92aWRlIG9wcG9ydHVuaXRpZXMgaW4gZXZlcnkgY2xhc3Mgc2Vzc2lvbiB0byBkaXNjdXNzIGlkZWFzIHdpdGggeW91ciBuZWlnaGJvcnMsIHRvIHdyaXRlIGFib3V0IHlvdXIgcGVyc3BlY3RpdmVzLCBhbmQgdG8gYW5zd2VyIHF1ZXN0aW9ucyBvciBzb2x2ZSBwcm9ibGVtcyBvbiB0aGUgUG93ZXJwb2ludCBzbGlkZXMuCi0gPHU+QXNrIHF1ZXN0aW9uczwvdT4gaW4gY2xhc3MgKHdlJ2xsIGFkZHJlc3MgYXMgbWFueSBhcyB3ZSBjYW4hKS4KQW5kIGFzayBxdWVzdGlvbnMgb3V0c2lkZSBvZiBjbGFzcy4KWW91IGNhbiBkbyB0aGlzIHJpZ2h0IGFmdGVyIGNsYXNzIG9yIGRpc2N1c3Npb24gc2VjdGlvbi4KWW91IGNhbiBjb21lIHRvIG9mZmljZSBob3VycyB3aXRoIGFueSBvZiB0aGUgVEFzIG9yIHdpdGggUHJvZmVzc29yIFBldGVyc2VuLgpZb3UgY2FuIGVtYWlsIHF1ZXN0aW9ucyB0byBhbnkgb2YgdGhlIFRBcyBvciBQcm9mZXNzb3IgUGV0ZXJzZW4uCllvdSBjYW4gYWxzbyBhc2sgb3RoZXIgc3R1ZGVudHMgaW4gdGhlIGNsYXNzIG9yIGluIHlvdXIgc3R1ZHkgZ3JvdXAgYWJvdXQgeW91ciBxdWVzdGlvbnMuCldlIGtub3cgdGhhdCBpdCBjYW4gYmUgYW54aWV0eS1wcm92b2tpbmcgdG8gdGFsayB3aXRoIHlvdXIgVEFzIG9yIGNvdXJzZSBpbnN0cnVjdG9ycywgYnV0IHdlIGFsbCBsb3ZlIHRhbGtpbmcgd2l0aCBzdHVkZW50cywgYW5kIHdlJ3JlIHJlYWxseSBnb29kIGF0IGZpZ3VyaW5nIG91dCB3aGF0IGlzIGNvbmZ1c2luZyB5b3UgYW5kIHRoZW4gaGVscGluZyB5b3UgdG8gdW5kZXJzdGFuZCBpdCBiZXR0ZXIhCgojIERvIEFsbCBvZiB0aGUgUmVxdWlyZWQgUmVhZGluZ3MgYW5kIEFzc2lnbm1lbnRzCgpDb21wbGV0aW9uIG9mIHRoZSByZXF1aXJlZCByZWFkaW5ncyBhbmQgYXNzaWdubWVudHMgaXMgYW4gaW1wb3J0YW50IHByZXJlcXVpc2l0ZSBmb3IgbGVhcm5pbmcgdGhlIG1hdGVyaWFsLgoKIyBQYXkgUGFydGljdWxhciBBdHRlbnRpb24gdG8gV2hhdCBpcyBNb3N0IEltcG9ydGFudAoKVGhlcmUgaXMgdG9vIG11Y2ggY29udGVudCBpbiB0aGUgY2xhc3MgdG8gcmVtZW1iZXIgZXZlcnl0aGluZywgc28gaXQgaXMgaW1wb3J0YW50IHRvIHByaW9yaXRpemUgc3R1ZHlpbmcgdGhlIG1vc3QgaW1wb3J0YW50IGluZm9ybWF0aW9uLgoKPHU+UGF5IGNsb3NlIGF0dGVudGlvbiB0byB0aGluZ3MgdGhhdCBhcmUgZW1waGFzaXplZCwgaW5jbHVkaW5nIHRoaW5ncyB0aGF0IGFyZSB0YWxrZWQgYWJvdXQgbW9yZSB0aGFuIG9uY2UuPC91PgpDZXJ0YWluIGNvbmNlcHRzIHdpbGwgYmUgZW1waGFzaXplZCBtdWNoIG1vcmUgdGhhbiBvdGhlcnMuCklmIHdlIGRpc2N1c3Mgc29tZXRoaW5nIHNldmVyYWwgdGltZXMgb3Igd2l0aCBncmVhdGVyIGVtcGhhc2lzLCBpdCBpcyBiZWNhdXNlIGl0IGlzIGEgY3JpdGljYWwgY29uY2VwdCBhbmQgd2Ugd2FudCB0byBtYWtlIHN1cmUgeW91IHVuZGVyc3RhbmQgaXQuCkxpc3RlbiBmb3IgdGhlbWVzIHRoYXQgY29tZSB1cCBpbiBib3RoIGxlY3R1cmUgYW5kIGRpc2N1c3Npb25zIHNlY3Rpb25zLgpNYWtlIHN1cmUgeW91IHVuZGVyc3RhbmQgd2hhdCBpcyBpbXBvcnRhbnQgYWJvdXQgdGhlbSEKCjx1PlBheSBwYXJ0aWN1bGFyIHRvIHRoZSB0YWtlLWF3YXkgbWVzc2FnZXMgb2YgZWFjaCBsZWN0dXJlLCBkaXNjdXNzaW9uIHNlY3Rpb24sIGFuZCByZWFkaW5nLjwvdT4KV2hlbiB5b3UgcmVhZCBhbiBhcnRpY2xlIG9yIHJldmlldyBhIGxlY3R1cmUsIGFzayB5b3Vyc2VsZjogIldoYXQgYXJlIHRoZSBtYWluIG1lc3NhZ2VzIFByb2Zlc3NvciBQZXRlcnNlbiB3YW50cyB1cyB0byBoZWFyPyIKQWZ0ZXIgYXR0ZW5kaW5nIGxlY3R1cmUgYW5kIHRoZSBkaXNjdXNzaW9uIHNlY3Rpb25zLCBjbG9zZSB5b3VyIG5vdGVzIGFuZCBhc2sgeW91cnNlbGYsICJXaGF0IHdlcmUgdGhlIG1haW4gcG9pbnRzIHRoYXQgUHJvZmVzc29yIFBldGVyc2VuIG9yIHRoZSBUQSBlbXBoYXNpemVkIGFuZCB3aGF0IHdhcyBpbXBvcnRhbnQgYWJvdXQgdGhlbT8iClNpbWlsYXJseSwgYWZ0ZXIgcmVhZGluZyB0aGUgYXNzaWdubWVudCBmb3IgZGlzY3Vzc2lvbiBzZWN0aW9ucyBvciBsZWN0dXJlLCB0dXJuIHRoZSBtYXRlcmlhbCBmYWNlIGRvd24gYW5kIGFzayB5b3Vyc2VsZiwgIldoYXQgd2FzIGltcG9ydGFudCBhYm91dCB0aGlzIHJlYWRpbmc/CldoYXQgYWJvdXQgdGhpcyBpcyByZWxldmFudCB0byBsZWN0dXJlIGFuZCBzZWN0aW9uPyBXaGF0IGFyZSB0aGUgbWFpbiB0aGluZ3MgdG8gbGVhcm4/IgpJZiB5b3UgcmVhZCBhIHJlc2VhcmNoIGFydGljbGUsIGFzayB5b3Vyc2VsZiAiV2hhdCBhcmUgdGhlIG1haW4gZmluZGluZ3M/CldoYXQgYXJlIHRoZSBzdHJlbmd0aHMgYW5kIGxpbWl0YXRpb25zIG9mIHRoZSBzdHVkeT8iCioqSGF2ZSB0aGUgcmVhZGluZyBxdWl6IG9wZW4gd2hpbGUgcmVhZGluZyB0aGUgYXJ0aWNsZSoqLCB0byBoZWxwIGd1aWRlIHlvdXIgcmVhZGluZyBzbyB5b3UgbWFrZSBzdXJlIHlvdSB0YWtlIGF3YXkgdGhlIGtleSBwb2ludHMgb2YgdGhlIHJlYWRpbmcuCgo8dT5QYXkgYXR0ZW50aW9uIHRvIHRoZSBleGFtcGxlcyBQcm9mZXNzb3IgUGV0ZXJzZW4gYW5kIHRoZSBUQXMgdXNlIGluIGxlY3R1cmUgYW5kIHNlY3Rpb24uPC91PgpFeGFtcGxlcyB3aWxsIGhlbHAgcGxhY2UgdGhlIGRpZmZlcmVudCBjb25jZXB0cyBpbnRvIGNvbnRleHQuClRoaW5rIGFib3V0IHRoZSBkaWZmZXJlbnQgZXhhbXBsZXMgZ2l2ZW4gaW4gY2xhc3MgYW5kIHVzZSB0aGVtIHRvIGxlYXJuIGhvdyBlYWNoIGNvbmNlcHQgY2FuIGJlIGFwcGxpZWQuClRoaXMgc2hvdWxkIGdpdmUgeW91IGEgYmV0dGVyIHVuZGVyc3RhbmRpbmcgb2Ygd2hhdCBtaWdodCBvdGhlcndpc2UgYmUgYW4gYWJzdHJhY3QgY29uY2VwdC4KCjx1PkZvY3VzIG9uIHVuZGVyc3RhbmRpbmcgdGhlIGNvbmNlcHRzPC91Piwgbm90IGp1c3QgbWVtb3JpemluZyB0aGUgZGV0YWlscy4KU3R1ZGVudHMgYXJlIG9mdGVuIHRhdWdodCB0byBtZW1vcml6ZSBmYWN0cyB0byBiZSBzdWNjZXNzZnVsIGluIGNsYXNzLgpBbHRob3VnaCBtZW1vcml6aW5nIHNvbWUgZmFjdHMgd2lsbCBiZSBoZWxwZnVsIGluIHRoaXMgY2xhc3MsIHdlIHJlYWxseSB3YW50IHlvdSB0byB1bmRlcnN0YW5kIGhvdyB0aGUgZmFjdHMgYXJlICphcHBsaWVkKiBpbiBjbGluaWNhbCBwc3ljaG9sb2d5LgpUaHVzLCBtYW55IHRlc3QgcXVlc3Rpb25zIHdpbGwgcmVxdWlyZSB0aGF0IHlvdSBib3RoIGtub3cgdGhlIGZhY3RzIGFuZCB1bmRlcnN0YW5kIG1vcmUgYWJzdHJhY3QgY29uY2VwdHMuClRvIHN1Y2NlZWQgaW4gdGhpcyBjbGFzcywgaXQgaXMgaW1wb3J0YW50IHRoYXQgeW91IHRoaW5rIGRlZXBseSBhYm91dCBhbmQgbGVhcm4gdG8gYXBwbHkgdGhlIGtub3dsZWRnZSBmcm9tIGxlY3R1cmUgYW5kIHNlY3Rpb24sIHJhdGhlciB0aGFuIHNpbXBseSBtZW1vcml6aW5nIGl0LgpZb3Ugd2lsbCBkbyBiZXN0IG9uIGV4YW1zIGlmIHlvdSBnbyBiZXlvbmQgbWVtb3JpemluZyBhbmQgY3JpdGljYWxseSB0aGluayBhYm91dCB0aGUgaWRlYXMgd2UgcHJlc2VudCBpbiBsZWN0dXJlIGFuZCBkaXNjdXNzaW9uIHNlY3Rpb25zLgpJbiBhZGRpdGlvbiB0byB1bmRlcnN0YW5kaW5nIHRoZSBjb25jZXB0cyBhbmQgdGVjaG5pY2FsIHRlcm1zIHdlIGhhdmUgZGlzY3Vzc2VkLCB5b3Ugc2hvdWxkIHVuZGVyc3RhbmQgd2h5IHRoZXkgYXJlIGltcG9ydGFudCBhbmQgaG93IHRvIGFwcGx5IHRoZW0uCkNvbXBhcmUgY29uY2VwdHMgZGlzY3Vzc2VkIGluIGNsYXNzIGFuZCB0aGluayBhYm91dCBob3cgdGhleSBhcmUgc2ltaWxhciBvciBkaWZmZXJlbnQuCkFwcGx5IGNvbmNlcHRzIHRvIHJlYWwgd29ybGQgc2NlbmFyaW9zIGFuZCB0aGluayB0aHJvdWdoIHRoZSBleGFtcGxlcyBwcmVzZW50ZWQgaW4gY2xhc3MuClB1dCB0aGUgY29uY2VwdHMgaW50byB5b3VyIG93biB3b3JkcyBhbmQgdHJ5IHRvIHRlYWNoIHRoZW0gdG8gc29tZW9uZSBlbHNlLgpUaGlzIGhlbHBzIHlvdSBmaWd1cmUgb3V0IHdoYXQgeW91IGRvIGFuZCBkb24ndCB1bmRlcnN0YW5kLCB3aGljaCBwdXRzIHlvdSBpbiBhIGJldHRlciBwb3NpdGlvbiB0byBhc2sgc3BlY2lmaWMgcXVlc3Rpb25zIGFmdGVyIGNsYXNzIG9yIGluIG9mZmljZSBob3Vycy4KClJlZ2FyZGluZyB0aGUgdHlwZXMgb2YgcXVlc3Rpb25zIHlvdSBtYXkgYmUgYXNrZWQgb24gdGhlIGV4YW0sIHlvdSBkbyAqbm90KiBuZWVkIHRvIG1lbW9yaXplIGRhdGVzLCBuYW1lcywgb3IgZXhhY3QgbnVtYmVycywgdW5sZXNzIHRoZSBkYXRlL25hbWUvbnVtYmVyIHdhcyBzdHJlc3NlZCBpbiBjbGFzcyBvciBzZWN0aW9uLCBidXQgeW91IHdpbGwgYmUgZXhwZWN0ZWQgdG8ga25vdyBnZW5lcmFsIHRyZW5kcyB0aGF0IHdlIGVtcGhhc2l6ZWQuCgojIFVzZSBFZmZlY3RpdmUgU3R1ZHkgU3RyYXRlZ2llcwoKIyMgU2NoZWR1bGUgU3R1ZHkgVGltZQoKPHU+RG8gbm90IGxlYXZlIHRoaW5ncyBmb3IgbGFzdCBtaW51dGUuPC91PgpZb3Ugd2lsbCBoYXZlIGEgbG90IHRvIHN0dWR5IGJlZm9yZSB5b3Uga25vdyBpdC4KVHJ5IHRvIGtlZXAgdXAgd2l0aCB0aGUgbWF0ZXJpYWwgYW5kIGFzayBxdWVzdGlvbnMgaWYgeW91IGhhdmUgdGhlbS4KCjx1PlN0dWR5IGZvciBzaG9ydGVyIGJ1dCBtb3JlIGZyZXF1ZW50IHBlcmlvZHMuPC91PgpPbmUgb2YgdGhlICoqQkVTVCoqIHRoaW5ncyB5b3UgY2FuIGRvIHRvIGxlYXJuIHRoZSBjb3Vyc2UgbWF0ZXJpYWwgaXMgPHU+KipzdHVkeSBmb3IgYSBzaG9ydGVyIGFtb3VudCBvZiB0aW1lLCBvbiBtdWx0aXBsZSBkYXlzIGEgd2VlaywgYW5kIGZvciBldmVyeSB3ZWVrIG9mIHRoZSBzZW1lc3RlcioqPC91Pi4KUmVzZWFyY2ggY2xlYXJseSBpbmRpY2F0ZXMgdGhhdCB0aGlzIGlzIGEgbXVjaCBtb3JlIGVmZmVjdGl2ZSBhcHByb2FjaCB0aGFuIGNyYW1taW5nIHlvdXIgc3R1ZHlpbmcgaW50byB0d28gb3IgdGhyZWUgbG9uZ2VyIHN0dWR5IHNlc3Npb25zIHJpZ2h0IGJlZm9yZSB0aGUgZXhhbS4KSW4gYSBudXRzaGVsbCwgdGhlIHJlc2VhcmNoIG9uIHN0dWR5aW5nIHRlbGxzIHVzIHRoYXQgaHVtYW5zIGJlc3QgcmVtZW1iZXIgaW5mb3JtYXRpb24gd2hlbiB0aGV5IHByYWN0aWNlIHJlY2FsbGluZyB0aGF0IGluZm9ybWF0aW9uIGFjcm9zcyBudW1lcm91cyBzdHVkeSBzZXNzaW9ucy4KCkZvciBpbnN0YW5jZSwgaWYgeW91IGJ1ZGdldCBvbmUgaG91ciB0byBsZWFybiBhbGwgdGhlIGRpZmZlcmVudCB0eXBlcyBvZiByZWxpYWJpbGl0eSBhbmQgdmFsaWRpdHksIHlvdSB3aWxsIGJlIG1vcmUgbGlrZWx5IHRvIHJlbWVtYmVyIHRoZW0gb24gdGVzdCBkYXkgaWYgeW91IHN0dWR5IHRoZW0gZm9yIDE1IG1pbnV0ZXMgYWNyb3NzIGZvdXIgZGF5cyByYXRoZXIgdGhhbiBzdHVkeWluZyB0aGVtIGZvciBhIHNpbmdsZSBob3VyIGF0IG9uZSB0aW1lLgpUaHVzLCBldmVuIHRob3VnaCB5b3XigJlyZSBub3Qgc3R1ZHlpbmcgdGhlIGluZm9ybWF0aW9uIGZvciBhbnkgbG9uZ2VyLCBzcHJlYWRpbmcgb3V0IHRoZSB0aW1lcyB0aGF0IHlvdSBzdHVkeSAoaS5lLiwgcmV2aXNpdGluZyB0aGUgbWF0ZXJpYWwgYWdhaW4gYW5kIGFnYWluIGZvciBicmllZmVyIHN0dWR5IHNlc3Npb25zKSBpcyB0aGUgYmVzdCBhcHByb2FjaCB0byBzdWNjZXNzZnVsbHkgcmVtZW1iZXJpbmcgdGhlIGluZm9ybWF0aW9uIG9uIHRlc3QgZGF5IGFuZCBiZXlvbmQgdGhlIGNvdXJzZSBpdHNlbGYuCgpXZSByZWNvbW1lbmQgc3R1ZHlpbmcgdGhlIGNvdXJzZSBtYXRlcmlhbCBmb3IgNOKAkzUgaG91cnMgcGVyIHdlZWsgYWNyb3NzIHRocmVlIDkwLW1pbnV0ZSBzdHVkeSBzZXNzaW9ucyBvciBhY3Jvc3MgZm91ci10by1maXZlIDYwLW1pbnV0ZSBzdHVkeSBzZXNzaW9ucy4KV2Ugc3VnZ2VzdCBzY2hlZHVsaW5nIHRoZXNlIHN0dWR5IHNlc3Npb25zIGluIHlvdXIgY2FsZW5kYXIgdG8gb2NjdXIgZXZlcnkgd2VlayBqdXN0IGxpa2UgeW91IHdvdWxkIHlvdXIgY2xhc3Nlcy4KSGVyZSBpcyBhbiBleGFtcGxlIG9mIHdoYXQgeW91ciBzdHVkeSBzZXNzaW9uIHNjaGVkdWxlIG1pZ2h0IGxvb2sgbGlrZToKCnwgTW9uZGF5ICAgIHwgVHVlc2RheSB8IFdlZG5lc2RheSAgfCBUaHVyc2RheSAgfCBGcmlkYXkgfAp8Oi0tLS0tLS0tLS18Oi0tLS0tLS0tfDotLS0tLS0tLS0tLXw6LS0tLS0tLS0tLXw6LS0tLS0tLXwKfCA4OjAw4oCTOTozMCB8ICAgICAgICAgfCAxMTozMOKAkzE6MDAgfCA1OjMw4oCTNzowMCB8ICAgICAgICB8CgpOb3cgdGhhdCB5b3UgaGF2ZSBzY2hlZHVsZWQgcmVndWxhciBzdHVkeSBzZXNzaW9ucywgd2hhdCBpcyB0aGUgbW9zdCBlZmZlY3RpdmUgd2F5IHRvIGRlc2lnbiB5b3VyIHN0dWR5IHN0cmF0ZWd5IHdpdGhpbiBlYWNoIHNlc3Npb24/ClJlc2VhcmNoIGluZGljYXRlcyB0aGF0IDx1PnRoZSBtb3N0IGVmZmVjdGl2ZSBzdHVkeSBzdHJhdGVneSBzcHJlYWRzIG91dCB0ZXN0aW5nIHlvdXJzZWxmIG9uIGRpZmZlcmVudCBwYXJ0cyBvZiB0aGUgbWF0ZXJpYWwgKip3aXRoaW4qKiBzdHVkeSBzZXNzaW9ucyBhcyB3ZWxsIGFzICoqYmV0d2VlbioqIHN0dWR5IHNlc3Npb25zPC91Pi4KRm9yIGluc3RhbmNlLCBpZiB5b3Ugd2FudCB0byByZW1lbWJlciB0aGUgaW5jbHVzaW9uIGFuZCBleGNsdXNpb24gY3JpdGVyaWEgZm9yIG1lbnRhbCBkaXNvcmRlcnMsIHlvdSBtaWdodCB0ZXN0IHlvdXJzZWxmIG9uIHdoYXQgeW91IHJlbWVtYmVyLCBjaGVjayB5b3VyIGFuc3dlcnMsIGFuZCB0aGVuIG1vdmUgb24gdG8gc3R1ZHkgc29tZXRoaW5nIGVsc2UuClRoZW4sIGF0IHRoZSBlbmQgb2YgdGhlIHNhbWUgc3R1ZHkgc2Vzc2lvbiwgeW91IGNvdWxkIHRlc3QgeW91cnNlbGYgYWdhaW4gb24gaW5jbHVzaW9uIGFuZCBleGNsdXNpb24gY3JpdGVyaWEgYW5kIGNoZWNrIHlvdXIgYW5zd2Vycy4KWW91IGNvdWxkIGFsc28gZGVjaWRlIHRvIHRlc3QgeW91cnNlbGYgb24gdGhlc2UgY3JpdGVyaWEgYXQgdGhlIHN0YXJ0IG9mIGVhY2ggc3R1ZHkgc2Vzc2lvbiBmb3IgYSB3ZWVrLCB1bnRpbCByZW1lbWJlcmluZyB0aGUgaW5mb3JtYXRpb24gYmVjb21lcyBlYXN5IGFuZCB5b3UgY2FuIHJlY2FsbCBpdCBhdXRvbWF0aWNhbGx5LgpUaGlzIGhlbHBzIHlvdXIgYnJhaW4gcHJhY3RpY2Ugc3VjY2Vzc2Z1bCByZW1lbWJlcmluZy4KSWYgc29tZXRoaW5nIGlzIGRpZmZpY3VsdCB0byByZW1lbWJlciwgdHJ5IHN0cnVnZ2xpbmcgd2l0aCBpdCBiZWZvcmUgeW91IHNob3cgeW91cnNlbGYgdGhlIGFuc3dlci4KTWVtb3J5IHdvcmtzIHNvcnQgb2YgbGlrZSBhIG11c2NsZSwgc28gY2hhbGxlbmdpbmcgeW91ciBicmFpbiB0byByZW1lbWJlciBzb21ldGhpbmcgZGlmZmljdWx0IGNhbiBoZWxwIHlvdSByZW1lbWJlciBtb3JlIHN1Y2Nlc3NmdWxseSB0aGUgbmV4dCB0aW1lLgoKQmVsb3csIDx1PndlJ3ZlIGluY2x1ZGVkIGFuIGV4YW1wbGUgd2VlayBvZiBob3cgaW5kaXZpZHVhbCBzdHVkeSBzZXNzaW9ucyBtaWdodCBiZSBzdHJ1Y3R1cmVkIHVzaW5nIHRoZSBzcGFjZWQtb3V0IGFwcHJvYWNoPC91PiBkdXJpbmcgYSB3ZWVrIGVhcmx5IGluIHRoZSBzZW1lc3Rlciwgd2hlbiB5b3UgaGF2ZSBoYWQgdGhlIGZpcnN0IHRocmVlIGxlY3R1cmVzIGFuZCBoYXZlIGFscmVhZHkgc3BlbnQgc29tZSB0aW1lIHN0dWR5aW5nIHRoZSBmaXJzdCB0d28gbGVjdHVyZXMuCktlZXAgaW4gbWluZCB0aGF0IHRoZSB0aGlyZCBsZWN0dXJlIGhhcyBtb3JlIG1hdGVyaWFsIHRoYW4gdGhlIGZpcnN0IHR3byBsZWN0dXJlcyBhbmQgaXMgdGhlIG1vc3QgcmVjZW50bHkgbGVhcm5lZCAoc28gdGhlIGxlYXN0IHN0dWRpZWQpLgpUaHVzLCBpdCBpcyBhbGxvdHRlZCB0aGUgbW9zdCB0aW1lLgpJbWFnaW5lIHNwZW5kaW5nIDE14oCTMjAgbWludXRlcyBvbiBlYWNoIGJsb2NrIHdpdGhpbiBhIHNlc3Npb24uCkN1c3RvbWl6ZSB0aGVzZSBzdHVkeSBzZXNzaW9ucyB0byBzcGVuZCB0aGUgbW9zdCB0aW1lIG9uIGNvdXJzZSBtYXRlcmlhbCB0aGF0IGZlZWxzIHRoZSBtb3N0IGNoYWxsZW5naW5nIHRvIHlvdSBhbmQgbGVzcyB0aW1lIG9uIG1hdGVyaWFsIHRoYXQgeW91IGZlZWwgbW9yZSBjb25maWRlbnQgYWJvdXQuCjx1PkFzIHlvdSBjYW4gc2VlLCB0aGUgbGVjdHVyZXMgcmVwZWF0IGFjcm9zcyBkYXlzIGFuZCB3aXRoaW4gc2luZ2xlIHN0dWR5IHNlc3Npb25zLCBhbmQgdGhlIHN0dWR5IGFwcHJvYWNoZXMgZHJhdyBmcm9tIGEgdmFyaWV0eSBvZiB0aGUgZWZmZWN0aXZlIHN0dWR5IHRlY2huaXF1ZXMgd2UgZGVzY3JpYmVkIGluIG1vcmUgZGV0YWlsIGluIGRpc2N1c3Npb24gc2VjdGlvbiAoYW5kIGJlbG93ISk8L3U+LgoKIVtFeGFtcGxlIFN0dWR5IFNjaGVkdWxlXShpbWFnZXMvc3R1ZHlTY2hlZHVsZS5qcGcpCgojIyBUZXN0IFlvdXJzZWxmIHsjdGVzdFlvdXJzZWxmfQoKT25lIG9mIHRoZSAqKkJFU1QqKiB3YXlzIHRvIGxlYXJuIHRoZSBjb3Vyc2UgbWF0ZXJpYWwgYW5kIGRvIHdlbGwgb24gdGhlIGV4YW1zIGlzIHRvIDx1PioqdGVzdCB5b3Vyc2VsZioqPC91PiBvbiBrZXkgY29uY2VwdHMsIHRoZWlyIGRpc3RpbmN0aW9ucywgYW5kIHRoZWlyIGltcGxpY2F0aW9ucy9hcHBsaWNhdGlvbnMsIHJhdGhlciB0aGFuIGp1c3QgcmUtcmVhZGluZyBvciByZS13cml0aW5nIHlvdXIgbm90ZXMgb3ZlciBhbmQgb3ZlciBhZ2Fpbi4KVGhlcmUgYXJlIDx1PnRocmVlIHRlc3RpbmcgbWV0aG9kczwvdT4gdGhhdCB3ZSBoaWdobHkgcmVjb21tZW5kIHRoaXMgc2VtZXN0ZXIuCgpGaXJzdCwgPHU+W3VzZSBRdWl6bGV0XShxdWl6bGV0Lmh0bWwpPC91PiB0byB0ZXN0IHlvdXIgYWJpbGl0eSB0byBwcm92aWRlIGRlZmluaXRpb25zIGZvciBrZXkgY29uY2VwdHMuCldlIGhhdmUgY3JlYXRlZCBRdWl6bGV0IHN0dWR5IHNldHMgZm9yIGVhY2ggbGVjdHVyZTsgZm9yIGluc3RydWN0aW9ucyBob3cgdG8gYWNjZXNzIHRoZW0sIHNlZSBbaGVyZV0ocXVpemxldC5odG1sKS4KTm90ZSB0aGF0IHlvdSBjYW4gdXNlIFF1aXpsZXQgYXMgYSBzdHJhdGVneSBmb3Igb3JnYW5pemluZyB5b3VyIHNlbGYtbGVhcm5pbmcsIHRvby4KV2UgcmVjb21tZW5kIHRoYXQgeW91IHVzZSB0aGUgIkZsYXNoY2FyZHMiLCAiVGVzdCIsIGFuZCAiTWF0Y2giIHN0dWR5IG1ldGhvZHMuCiJNYXRjaCIgZXZhbHVhdGVzIHlvdXIgYWJpbGl0eSB0byByZWNvZ25pemUgb3IgaWRlbnRpZnkgdGhlIGNvcnJlY3QgZGVmaW5pdGlvbiBmb3IgZWFjaCB0ZXJtLgpUaGlzIGlzIHRoZSBlYXNpZXN0IGFwcHJvYWNoIGFuZCBpcyBhIGdvb2Qgc3RhcnRpbmcgcGxhY2UuCiJUZXN0IiBhbHNvIGV2YWx1YXRlcyB5b3VyIGFiaWxpdHkgdG8gcmVjb2duaXplIG9yIGlkZW50aWZ5IHRoZSBjb3JyZWN0IGRlZmluaXRpb24gZm9yIGEgdGVybSBidXQgdXNlcyBhIHZhcmlldHkgb2YgdGVzdGluZyBzdHJhdGVnaWVzLgpUaGlzIHN0dWR5IG1ldGhvZCBpcyBtb3JlIGNoYWxsZW5naW5nIHRoYW4gIk1hdGNoIi4KIkZsYXNoY2FyZHMiIGV2YWx1YXRlcyB5b3VyIGFiaWxpdHkgdG8gcmVjYWxsIHRoZSBjb3JyZWN0IGRlZmluaXRpb24gZm9yIGVhY2ggdGVybS4KVGhpcyBzdHVkeSBtZXRob2QgaXMgdGhlIG1vc3QgY2hhbGxlbmdpbmcuCgpTZWNvbmQsIDx1PmNvbXBsZXRlIGFsbCBzdHVkeSBxdWVzdGlvbnMgZm9yIGVhY2ggbGVjdHVyZSBhbmQgYWxsIHByYWN0aWNlIGV4YW0gcXVlc3Rpb25zIGZvciBlYWNoIGV4YW08L3U+LCB3aGljaCB5b3UgY2FuIGZpbmQgaW4gdGhlICJTdHVkeSBRdWVzdGlvbnMiIGFuZCAiUHJhY3RpY2UgRXhhbSBRdWVzdGlvbnMiIGZvbGRlcnMsIHJlc3BlY3RpdmVseSwgb2YgdGhlICJGaWxlcyIgdGFiIGluIElDT04uClRoZSBzdHVkeSBxdWVzdGlvbnMgYW5kIHByYWN0aWNlIGV4YW0gcXVlc3Rpb25zIGFyZSBhIGdyZWF0IHRvb2wgdGhhdCB3aWxsIGhlbHAgeW91IGNoZWNrIGZvciB1bmRlcnN0YW5kaW5nIG9mIGNvbmNlcHRzLgpUaGVyZSBhcmUgbXVsdGlwbGUtY2hvaWNlIHF1ZXN0aW9ucywgZm9yIHdoaWNoIGFsbCBjb3JyZWN0IGFuc3dlcnMgYXJlIHByb3ZpZGVkLgpBbmQgdGhlcmUgYXJlIG9wZW4tZW5kZWQgcXVlc3Rpb25zLCBmb3Igd2hpY2ggc2FtcGxlIGNvcnJlY3QgcmVzcG9uc2VzIGFyZSBwcm92aWRlZC4KVGhlIGxhdHRlciB0eXBlIG9mIHF1ZXN0aW9uIGlzIHBhcnRpY3VsYXJseSBjaGFsbGVuZ2luZywgYmVjYXVzZSByZXNlYXJjaCBjbGVhcmx5IGRlbW9uc3RyYXRlcyB0aGF0IHRyeWluZyB0byBwdXQgY2xhc3MtcmVsYXRlZCBtYXRlcmlhbCBpbnRvIHlvdXIgb3duIHdvcmRzIGlzIG9uZSBvZiB0aGUgYmVzdCB3YXlzIHRvIGxlYXJuIG5ldyBtYXRlcmlhbCBhbmQgZmlndXJlIG91dCB3aGF0IGlzIGNvbmZ1c2luZyB0byB5b3UuCgpUaGlyZCwgPHU+YXNrIHlvdXJzZWxmIHF1ZXN0aW9uczwvdT4gYWJvdXQgdGhlIG1hdGVyaWFsIHlvdSBoYXZlIHN0dWRpZWQsIGFuc3dlciB0aGVtLCBhbmQgVEhFTiBjaGVjayB0byBzZWUgaWYgeW91IGFyZSBjb3JyZWN0LgpGb3IgZXhhbXBsZSwgYWZ0ZXIgcmV2aWV3aW5nIHRoZSBmaXJzdCBsZWN0dXJlLCB5b3UgbWlnaHQgY2xvc2UgeW91ciBtYXRlcmlhbHMsIHRoZW4gYXNrIHlvdXJzZWxmICJXaGF0IGFyZSB0aGUgZm91ciBtYWluIG1lYXN1cmVtZW50IHN0cmF0ZWdpZXMgaW4gc2NpZW50aWZpYyBjbGluaWNhbCBwc3ljaG9sb2d5LCBhbmQgaG93IGFyZSB0aGV5IGRlZmluZWQ/IiBvciAiV2hhdCBhcmUgc29tZSBrZXkgY2hhcmFjdGVyaXN0aWNzIG9mIHNjaWVudGlmaWMgY2xpbmljYWwgcHN5Y2hvbG9neT8iIG9yICJXaGF0IGFyZSBzb21lIGtleSBjaGFsbGVuZ2VzIGZhY2luZyBzY2llbnRpZmljIGNsaW5pY2FsIHBzeWNob2xvZ3k/IgoKSW4gYSBwcmlvciBzZW1lc3RlciBvZiB0aGUgY2xhc3MsIHRoZSBzdHVkZW50cyB3aG8gcmVjZWl2ZWQgdGhlIGhpZ2hlc3QgZ3JhZGVzIHRlbmRlZCB0byBzcGVuZCByZWxhdGl2ZWx5IG1vcmUgdGltZSB1c2luZyBTdHVkeSBRdWVzdGlvbnMgdG8gdGVzdCB0aGVtc2VsdmVzIGNvbXBhcmVkIHRvIHVzaW5nIFF1aXpsZXQgb3IgcmVyZWFkaW5nIHRoZWlyIG5vdGVzIChzZWUgZmlndXJlIGJlbG93KS4KCiFbR3JhZGVzIGJ5IFN0dWR5IE1ldGhvZCBpbiBQcmlvciBTZW1lc3Rlcl0oaW1hZ2VzL2V4YW1HcmFkZXNCeVN0dWR5TWV0aG9kLnBuZykKCiMjIFB1dCBNYXRlcmlhbCBJbnRvIFlvdXIgT3duIFdvcmRzCgpBbm90aGVyIG9uZSBvZiB0aGUgKipCRVNUKiogd2F5cyB0byBsZWFybiB0aGUgY291cnNlIG1hdGVyaWFsIGFuZCBkbyB3ZWxsIG9uIHRoZSBleGFtcyBpcyB0byA8dT4qKnB1dCB0aGUgY291cnNlIG1hdGVyaWFsIGludG8geW91ciBvd24gd29yZHMqKjwvdT4gb3IgPHU+Kip0cnkgdG8gZXhwbGFpbiB0aGUgbWF0ZXJpYWwgdG8gc29tZW9uZS9zb21ldGhpbmcgZWxzZSAoaW5jbHVkaW5nIHlvdXIgY2VpbGluZyBmYW4pKio8L3U+LgoKQ2xvc2UgeW91ciBub3RlcyBvbiBhIHBhcnRpY3VsYXIgcG9ydGlvbiBvZiB0aGUgbWF0ZXJpYWwgYW5kIHRoZW4gYXNrIHlvdXJzZWxmIHNvbWUgb2YgdGhlIGZvbGxvd2luZyBxdWVzdGlvbnMgb3IgZXhwbGFpbiB0aGVtIHRvIHNvbWVvbmUvc29tZXRoaW5nIGVsc2U6CiJXaGF0IGFyZSB0aGUgbWFpbiBwb2ludHMsIGNvbmNlcHRzLCBhbmQgZmluZGluZ3MsIGluIG15IG93biB3b3Jkcz8KV2hhdCBpcyBpbXBvcnRhbnQgYWJvdXQga2V5IHBvaW50cywgY29uY2VwdHMgYW5kIGZpbmRpbmdzLCBpbiBteSBvd24gd29yZHM/CldoYXQgbWlnaHQgYW5vdGhlciBleGFtcGxlIG9mIGEga2V5IGNvbmNlcHQgYmU/CkhvdyBjYW4ga2V5IGNvbmNlcHRzIGJlIGFwcGxpZWQ/CkhvdyBkbyBrZXkgY29uY2VwdHMgZGlmZmVyIGZyb20gb25lIGFub3RoZXIsIGluIG15IG93biB3b3Jkcz8iCgpTaW1pbGFybHksIGFmdGVyIHJlYWRpbmcgYSByZXNlYXJjaCBhcnRpY2xlIGZvciBkaXNjdXNzaW9uIHNlY3Rpb24sIHR1cm4gdGhlIG1hdGVyaWFsIGZhY2UgZG93biBhbmQgYXNrIHlvdXJzZWxmIHNvbWUgb2YgdGhlIGZvbGxvd2luZyBxdWVzdGlvbnM6CiJXaGF0IGlzIGltcG9ydGFudCBhYm91dCB0aGlzIHJlYWRpbmcsIGluIG15IG93biB3b3Jkcz8KV2hhdCBhYm91dCB0aGlzIHBhcGVyIGlzIHJlbGV2YW50IHRvIG91ciBjb3Vyc2U/CldoYXQgYXJlIHRoZSBtYWluIGZpbmRpbmdzPwpXaGF0IGFyZSB0aGUgc3RyZW5ndGhzIGFuZCBsaW1pdGF0aW9ucyBvZiB0aGUgc3R1ZHk/PwoKVGhlc2UgYXBwcm9hY2hlc+KAlHdoaWNoIG1vdmUgYmV5b25kIG1lbW9yaXppbmcgY29uY2VwdHPigJR3aWxsIGhlbHAgeW91IG1vcmUgZGVlcGx5IHVuZGVyc3RhbmQgYW5kIGxlYXJuIHRvIGFwcGx5IGNvdXJzZSBtYXRlcmlhbCwgd2hpY2ggaXMgY3JpdGljYWwgdG8gc3VjY2VzcyBpbiB0aGlzIGNvdXJzZS4KVGhlc2UgYXBwcm9hY2hlcyBhbHNvIGhlbHAgeW91IGZpZ3VyZSBvdXQgd2hhdCdzIGNvbmZ1c2luZyB5b3UsIHNvIHlvdSdyZSBpbiBhIGJldHRlciBwb3NpdGlvbiB0byBhc2sgcXVlc3Rpb25zIGR1cmluZy9hZnRlciBjbGFzcywgb3ZlciBlbWFpbCwgb3IgaW4gb2ZmaWNlIGhvdXJzLgoKIyMgU3R1ZHkgV2l0aCBQZWVycwoKSm9pbiBhIHBlZXIgc3R1ZHkgZ3JvdXAhClN0dWRlbnRzIGNhbiBsZWFybiBhIGxvdCBmcm9tIHN0dWR5aW5nIHdpdGggdGhlaXIgcGVlcnMuClN0dWR5aW5nIHdpdGggcGVlcnMgY2FuIGhlbHAgc3R1ZGVudHMgZ2FpbiBiZXR0ZXIgdW5kZXJzdGFuZGluZyBvZiB3aGVyZSB0aGVpciBrbm93bGVkZ2Ugb2YgY291cnNlIG1hdGVyaWFsIGlzIHN0cm9uZ2VyIGFuZCB3aGljaCB0b3BpY3MgdGhleSBuZWVkIHRvIHN0dWR5IG1vcmUuCk1vcmVvdmVyLCBwcm92aWRpbmcgaW5zdHJ1Y3Rpb24gdG8gb3RoZXIgcGVlcnMgY2FuIGhlbHAgY29uc29saWRhdGUgeW91ciBvd24gbGVhcm5pbmcuCkNvbnRhY3QgdGhlIGluc3RydWN0b3IgdGVhbSBpZiB5b3Ugd2FudCB0byBqb2luIGEgcGVlciBzdHVkeSBncm91cC4KCiMgR28gRWFzeSBvbiBMZXNzIEVmZmVjdGl2ZSBTdHVkeSBTdHJhdGVnaWVzCgpGaW5hbGx5LCB3ZSdyZSBnb2luZyB0byB0b3VjaCBicmllZmx5IG9uIDx1Pioqd2hhdCBkb2Vzbid0IHdvcmsgd2VsbCoqPC91PiB3aGVuIHRyeWluZyB0byBsZWFybiBjb3Vyc2UgbWF0ZXJpYWwgYW5kIHByZXBhcmUgZm9yIGV4YW1zLgpSZXNlYXJjaCB0ZWxscyB1cyB0aGF0IHJlLXJlYWRpbmcgb3IgcmUtd3JpdGluZyBub3RlcyBvdmVyIGFuZCBvdmVyIGFnYWluIGRvZXNuJ3QgaW1wcm92ZSB5b3VyIHVuZGVyc3RhbmRpbmcgb2YgY291cnNlIG1hdGVyaWFsIGFuZCB0ZXN0IHBlcmZvcm1hbmNlLCBldmVuIHRob3VnaCBpdCBtYXkgZmVlbCBsaWtlIHRoZSBtYXRlcmlhbCBpcyBiZWNvbWluZyBlYXNpZXIgb3IgbW9yZSBmYW1pbGlhci4KQXMgd2Ugbm90ZWQgYWJvdmUsIGNyYW1taW5nIG1vc3Qgb2YgeW91ciBzdHVkeWluZyBpbnRvIHRoZSBkYXkgb3IgdHdvIGJlZm9yZSB0aGUgZXhhbSBhbHNvIHJlc3VsdHMgaW4gbGVzcyB1bmRlcnN0YW5kaW5nIGFuZCBwb29yZXIgdGVzdCBzY29yZXMuCkFjdGl2ZSBsZWFybmluZyBhbmQgdGVzdGluZyBtZXRob2RzIGFyZSBrZXkgdG8gaW1wcm92aW5nIHVuZGVyc3RhbmRpbmcgYW5kIGRvaW5nIGJldHRlciBvbiBleGFtcywgZXZlbiBpZiB0aGV5IGZlZWwgbW9yZSBjaGFsbGVuZ2luZy4KVGh1cywgd2UgdXJnZSB5b3UgdG8gdGVzdCB5b3Vyc2VsZiB1c2luZyBRdWl6bGV0LCBjb21wbGV0ZSB0aGUgU3R1ZHkgUXVlc3Rpb25zLCBhc2sgeW91cnNlbGYgcXVlc3Rpb25zLCBhbmQgdHJ5IHRvIHB1dCBjb3Vyc2UgbWF0ZXJpYWwgaW50byB5b3VyIG93biB3b3JkcyEKCiMgVXNlIEVmZmVjdGl2ZSBUZXN0LVRha2luZyBTdHJhdGVnaWVzCgotIEFycml2ZSBlYXJseSBhbmQgcmVsYXggaW4gdGhlIG1pbnV0ZXMgYmVmb3JlIHRoZSBleGFtLgpZb3UgbWlnaHQgZm9jdXMgb24geW91ciBicmVhdGhpbmcsIGNsb3NlIHlvdXIgZXllcyBhbmQgZm9jdXMgb24gdml2aWRseSByZWNhbGxpbmcgYSByZWxheGluZyBzY2VuZSBvciBleHBlcmllbmNlLCBvciBzbG93bHkgY2xlbmNoIGFuZCByZWxlYXNlIHNvbWUgbXVzY2xlIGdyb3VwcyBpbiB5b3VyIGJvZHkuCi0gTWFrZSBhbiBpbml0aWFsIHJhcGlkIHBhc3MgdGhyb3VnaCB0aGUgZXhhbSBpbiB3aGljaCB5b3UgYW5zd2VyIGV2ZXJ5IHF1ZXN0aW9uIHlvdSBjYW4uCkRvbid0IHNwZW5kIHRvbyBsb25nIG9uIGFueSBzaW5nbGUgcXVlc3Rpb27igJRqdXN0IGZsYWcgdGhlIG9uZXMgYWJvdXQgd2hpY2ggeW91IGFyZSB1bmNlcnRhaW4gYW5kIG1vdmUgb24uCkJ1dCBkbyByZWFkIHRoZSBpbnN0cnVjdGlvbnMsIHRoZSBxdWVzdGlvbnMsIGFuZCB0aGUgcmVzcG9uc2VzIGNhcmVmdWxseSwgc28geW91IGRvbid0IG1ha2UgY2FyZWxlc3MgZXJyb3JzLgotIE9uIHlvdXIgc2Vjb25kIHBhc3MgdGhyb3VnaCB0aGUgZXhhbSwgdGFrZSBhIGxpdHRsZSBsb25nZXIgKGJ1dCBub3QgdG9vIGxvbmchKSBvbiBlYWNoIG9mIHRoZSByZW1haW5pbmcgcXVlc3Rpb25zIGFuZCBtYWtlIHlvdXIgYmVzdCBjYWxsIG9uIGVhY2ggb25lLgotIExlYXZlIHRpbWUgdG8gcmV2aWV3IHlvdXIgYW5zd2VycyBpZiB5b3UgY2FuLgotIEtlZXAgYSBnb29kIGV5ZSBvbiB5b3VyIHRpbWUsIGFuZCBtYW5hZ2UgeW91ciB0aW1lIHdlbGwsIHNvIHRoYXQgeW91IGhhdmUgc3VmZmljaWVudCB0aW1lIHRvIG1ha2UgYm90aCB0aGUgZmlyc3QgYW5kIHNlY29uZCBwYXNzIHRocm91Z2ggdGhlIGV4YW0uCi0gQXNrIHF1ZXN0aW9ucyBpZiB5b3UgaGF2ZSB0aGVtLgpXZSdsbCBsZXQgeW91IGtub3cgaWYgd2UgY2FuJ3QKYW5zd2VyIHRoZW0uCi0gR2V0IGEgZ29vZCBuaWdodCdzIHNsZWVwIGJlZm9yZSB0aGUgZXhhbSEKVGhpcyB3aWxsIGltcHJvdmUgeW91ciBsb25nLXRlcm0gbWVtb3J5IGZvciBjb3Vyc2UgbWF0ZXJpYWwgYW5kIG1ha2UgaXQgZWFzaWVyIHRvIGFjY2VzcyBkdXJpbmcgdGhlIGV4YW0uCi0gR2V0IHNvbWUgZXhlcmNpc2Ugb3IgZW5nYWdlIGluIHBoeXNpY2FsIGFjdGl2aXR5IG9mIHNvbWUgc29ydCAoZXZlbiBhIGJyaWVmIHdhbGshKS4KUGh5c2ljYWwgYWN0aXZpdHkgY2FuIGltcHJvdmUgeW91ciBhYmlsaXR5IHRvIGZvY3VzIG9uIGNoYWxsZW5naW5nIHRhc2tzIGFuZCByZWR1Y2UgeW91ciBhbnhpZXR5IGFib3V0IHRoZSBleGFtLgotIEV2YWx1YXRlIHlvdXIgcGVyZm9ybWFuY2UgYW5kIHRoZSBhZGVxdWFjeSBvZiB5b3VyIHByZXBhcmF0aW9uIGFmdGVyIHRoZSBleGFtIChib3RoIGJlZm9yZSBhbmQgYWZ0ZXIgeW91IGtub3cgaG93IHlvdSBkaWQhKS4KV2hhdCB3b3JrZWQgd2VsbCwgYW5kIHdoYXQgc2hvdWxkIHlvdSBjb25zaWRlciBkb2luZyBkaWZmZXJlbnRseSB3aGVuIHByZXBhcmluZyBmb3IgYW5kIHRha2luZyB0aGUgbmV4dCBleGFtPwpGZWVsIGZyZWUgdG8gY29tZSBkaXNjdXNzIHRoaXMgd2l0aCB0aGUgVEFzIG9yIFByb2Zlc3NvciBQZXRlcnNlbiEKCiMgQXNrIFVzIFF1ZXN0aW9ucyBhbmQgTGV0IFVzIEtub3cgV2hlbiBZb3UncmUgQ29uZnVzZWQKCkV2ZXJ5IG9uZSBvZiB1c+KAlGluY2x1ZGluZyB5b3VyIFRBcyBhbmQgUHJvZnMh4oCUaGF2ZSBxdWVzdGlvbnMgYW5kIGdldCBjb25mdXNlZCBhYm91dCBjb3Vyc2UgbWF0ZXJpYWwgc29tZXRpbWVzLgpXaGVuIHRoaXMgaGFwcGVucyB0byB5b3UgKGFuZCBpdCB3aWxsISksIHJlbWVtYmVyIHRoYXQgeW91IGhhdmUgYSBsb3Qgb2Ygb3B0aW9uczogeW91IGNhbiBhc2sgcXVlc3Rpb25zIGluc2lkZSBvciBvdXRzaWRlIG9mIGNsYXNzLCB5b3UgY2FuIGNvbWUgdG8gb2ZmaWNlIGhvdXJzIHdpdGggdXMsIGFuZCB5b3UgY2FuIGVtYWlsIHVzLgpXZSBrbm93IHRoYXQgdGFsa2luZyB3aXRoIHVzIGNhbiBiZSBjaGFsbGVuZ2luZywgYnV0IHdlIGVuY291cmFnZSB5b3UgdG8gZ2V0IG91dHNpZGUgeW91ciBjb21mb3J0IHpvbmUgYW5kIGdpdmUgaXQgYSB0cnkhCmByIGVtbzo6amkoInNtaWxpbmdfZmFjZV93aXRoX3NtaWxpbmdfZXllcyIpYApXZSBhbGwgbG92ZSB3b3JraW5nIHdpdGggc3R1ZGVudHMsIGFuZCB3ZSBhbGwgd2FudCB5b3UgdG8gc3VjY2VlZCBpbiBvdXIgY2xhc3MuCkFzayBmb3IgaGVscCB3aGVuIHlvdSBuZWVkIGl0IQo=</div>
+<script type="text/javascript" src="includes/external-links.js"></script>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeSourceEmbed("howToStudy.Rmd");
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
