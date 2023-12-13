@@ -401,7 +401,6 @@ SDS is responsible for making Letters of Accommodation (LOA) available.
 The LOA will specify what reasonable course accommodations the student is eligible for and those the instructor should provide. Additional information can be found on the [SDS website](https://sds.studentlife.uiowa.edu/students/apply).
 
 - [Free Speech and Expression](https://provost.uiowa.edu/teaching-resources/course-syllabi-information#free-speech-and-expression)
-- [Non-discrimination](https://provost.uiowa.edu/teaching-resources/course-syllabi-information#non-discrimination-statement)
 - [Absences for Religious Holy Days](https://opsmanual.uiowa.edu/students/absences-class#8.2)
 - [Classroom Expectations](https://provost.uiowa.edu/teaching-resources/course-syllabi-information#classroom-expectations)
 - [Non-discrimination](https://provost.uiowa.edu/teaching-resources/course-syllabi-information#non-discrimination-statement)
