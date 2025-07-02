@@ -446,7 +446,7 @@ If you have accessibility accommodations from Student Disability Services (SDS),
 
 # Where to Get Academic Support for This Course {#academic-support}
 
-- Drop-in study groups and one-on-one tutoring: drop-in student hours of the <mark>undergraduate TAs,</mark> graduate TAs, and instructor
+- Drop-in study groups and one-on-one tutoring: student drop-in hours of the graduate TAs and instructor
 - Formal tutoring: Tutor Iowa: https://tutor.uiowa.edu
 - Academic accommodations: https://sds.studentlife.uiowa.edu
 
