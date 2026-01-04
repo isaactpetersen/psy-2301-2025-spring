@@ -1,16 +1,12 @@
 ---
 title: "Learning and Succeeding in Introduction to Clinical Psychology"
 subtitle: "Adapted from a document by Teresa Treat and Caroline Boyd-Rogers"
+engine: knitr
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  echo = TRUE,
-  error = TRUE,
-  comment = "")
-```
+```{r}
+#| include: false
 
-```{r, include = FALSE}
 library("emo")
 ```
 
@@ -122,13 +118,13 @@ Customize these study sessions to spend the most time on course material that fe
 
 ![Example Study Schedule](images/studySchedule.jpg)
 
-## Test Yourself {#testYourself}
+## Test Yourself {#sec-testYourself}
 
 One of the **BEST** ways to learn the course material and do well on the exams is to <u>**test yourself**</u> on key concepts, their distinctions, and their implications/applications, rather than just re-reading or re-writing your notes over and over again.
 There are <u>three testing methods</u> that we highly recommend this semester.
 
-First, <u>[use Quizlet](quizlet.html)</u> to test your ability to provide definitions for key concepts.
-We have created Quizlet study sets for each lecture; for instructions how to access them, see [here](quizlet.html).
+First, <u>[use Quizlet](quizlet.qmd)</u> to test your ability to provide definitions for key concepts.
+We have created Quizlet study sets for each lecture; for instructions how to access them, see [here](quizlet.qmd).
 Note that you can use Quizlet as a strategy for organizing your self-learning, too.
 We recommend that you use the "Flashcards", "Test", and "Match" study methods.
 "Match" evaluates your ability to recognize or identify the correct definition for each term.

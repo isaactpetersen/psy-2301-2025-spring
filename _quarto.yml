@@ -23,8 +23,14 @@ website:
         href: syllabus.qmd
       - text: "Miscellaneous"
         menu:
+        - text: How to Study for Intro Clinical
+          href: howToStudy.qmd
         - text: I Think I Might Need Some Help...
           href: help.qmd
+        - text: Mediation vs. Interaction
+          href: mediationInteraction.qmd
+        - text: Using Quizlet to Learn Key Terms
+          href: quizlet.qmd
         - text: Opportunity to Join My Research Lab!
           href: devpsylab.qmd
       - about.qmd
@@ -56,6 +62,8 @@ format:
     license: CC BY
     author-meta: "Isaac T. Petersen"
     date-meta: today
+  pdf:
+    keep-tex: true
 
 lightbox: 
   match: auto

@@ -2,13 +2,6 @@
 title: "Mediation versus Interaction"
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  echo = TRUE,
-  error = TRUE,
-  comment = "")
-```
-
 # Overview
 
 The purpose of this page is to briefly clarify the difference between interaction (also called "moderation") and mediation hypotheses.

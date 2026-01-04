@@ -3,12 +3,10 @@
 This is the code that creates the Wiki for PSY:2301 - Introduction to Clinical Psychology (Spring 2025).
 The Class Wiki is located here: **https://isaactpetersen.github.io/psy-2301-2025-spring**
 
-To render the syllabus as PDF:
+To render the syllabus as PDF, run the following command in your terminal (may have to make sure you have updated your TinyTex installation first: i.e., run `tinytex::install_tinytex()` in `R`):
 
-```r
-rmarkdown::render(
-  "syllabus.Rmd",
-  output_format = rmarkdown::pdf_document(latex_engine = "lualatex"))
+```bash
+quarto render syllabus.qmd --to pdf
 ```
 
 # License
